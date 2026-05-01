@@ -14,7 +14,7 @@ import bookListImage from '../assets/images/BOOCCOMMU/รายการหน�
 import chatListImage from '../assets/images/BOOCCOMMU/แชทลิส.png'
 
 
-import { diagrams } from '../data/images/diagrams'
+/* import { diagrams } from '../data/images/diagrams' */
 
 function BookCommuPage() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -70,7 +70,7 @@ function BookCommuPage() {
       </section>
 
       {/* Diagram */}
-      <section className="bc-diagram">
+{/*       <section className="bc-diagram">
         <div className="bc-section-label">DIAGRAM</div>
         <div className="bc-diagram-box">
           <img
@@ -79,7 +79,7 @@ function BookCommuPage() {
             alt="auth diagram"
           />
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }
