@@ -1,6 +1,6 @@
 # สวัสดีครับ ผม นายรพีพัฒน์ ทับทอง
 
-นักศึกษาสาย IT ที่สนใจด้าน Frontend Development และ UI/UX  
+ที่สนใจด้าน Frontend Development และ UI/UX  
 ชอบพัฒนา Web Application และประสบการณ์ผู้ใช้งานที่ทันสมัย  
 กำลังเรียนรู้ด้าน Game Development และ VR
 
