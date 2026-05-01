@@ -180,6 +180,18 @@
     border-radius: 10px;
 }
 
+
+
+.bc-diagram-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.bc-diagram-image:hover {
+  transform: scale(1.03);
+}
 @media (max-width: 900px) {
     .bc-overview-grid, .bc-features-grid, .bc-tech-grid, .bc-stack-main {
         grid-template-columns: 1fr;
