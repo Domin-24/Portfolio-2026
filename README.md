@@ -1,16 +1,27 @@
-# React + Vite
+# สวัสดีครับ ผม นายรพีพัฒน์ ทับทอง
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+นักศึกษาสาย IT ที่สนใจด้าน Frontend Development และ UI/UX  
+ชอบพัฒนา Web Application และประสบการณ์ผู้ใช้งานที่ทันสมัย  
+กำลังเรียนรู้ด้าน Game Development และ VR
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## เกี่ยวกับผม
+- สนใจพัฒนาเว็บไซต์และแอปพลิเคชัน
+- มีประสบการณ์ทำโปรเจกต์จริงทั้ง Web และ VR
+- ชอบเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาตัวเองอย่างต่อเนื่อง
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ทักษะ (Tech Stack)
+- Frontend: HTML, CSS, JavaScript, React
+- Backend: PHP, Node.js
+- Database: MySQL
+- Tools: Git, Docker
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  ติดต่อ
+- Email: rapeepattabtong24@email.com
+- phone: 0829611988
+---
