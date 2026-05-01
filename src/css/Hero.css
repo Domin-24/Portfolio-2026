@@ -1,0 +1,127 @@
+.Hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: start;
+  padding: 10rem 1.5rem 2rem;
+  min-height: calc(100vh - 80px);
+}
+
+.Hero .contact-section {
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  min-height: auto;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .Hero {
+    flex-direction: column;
+    padding: 1.2rem 1rem 2rem;
+    min-height: calc(100vh - 80px);
+  }
+}
+
+.hero-content {
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: start;
+}
+
+
+.conten-1,
+ .conten-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.hello-text {
+  font-family: Bebas Neue Regular, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 0 1rem 0;
+  cursor:pointer;
+}
+
+.hello-text:hover{
+ transform:  rotate(-8deg) scale(1.08);
+}
+
+.text-name {
+  font-family: Bebas Neue Regular, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 2rem 0;
+  line-height: 1.1;
+}
+
+.im {
+  font-family: Bebas Neue Regular, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 2rem 0;
+  line-height: 1.1;
+}
+
+.conten-2 p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.2rem 0;
+  line-height: 1.6;
+}
+
+
+
+.ava-card {
+  position: relative;
+  display: flex;
+  background-color: #0091D4;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 50px 50px 180px 50px;
+  border-radius: 8px;
+}
+
+.text-card {
+  font-family: Bebas Neue Regular, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FDD503;
+  bottom: 20px;
+  z-index: 1;
+  margin-bottom: 50px;
+  transform: translateY(50px);
+  animation: reverse 1.2s ease forwards;
+
+    opacity: 0;
+  transform: translateY(50px);
+  animation: reveal 1.2s ease forwards;
+}
+
+@keyframes reveal{
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+
+.avatar {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 200px;
+  height: auto;
+  max-height: 240px;
+  z-index: 2;
+}

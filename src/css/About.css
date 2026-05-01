@@ -1,0 +1,142 @@
+.about-section {
+  background-color: #e8e8e8;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 0  0 auto;
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: px;
+  width: auto;
+}
+
+.about-image img {
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-header h3 {
+  font-size: 0.95rem;
+  color: #666;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0 0 0;
+  font-family: Bebas Neue Regular, 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.about-description {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  color: #555;
+  margin: 0;
+  text-align: left;
+  max-width: 600px;
+  word-spacing: 0.1em;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 0;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.education-section h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.education-year {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0.5rem 0 0 0;
+  font-weight: 500;
+}
+
+.university {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.3rem 0;
+}
+
+.gpa {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
+}
+
+.major {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-image img {
+    width: 200px;
+  }
+
+  .about-header h2 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-description {
+    text-align: center;
+  }
+}

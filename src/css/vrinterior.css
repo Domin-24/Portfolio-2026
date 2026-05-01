@@ -1,0 +1,245 @@
+:root {
+    --vr-primary: #2d3a4b;
+    --vr-bg: #f4f7fb;
+    --vr-text: #1f2d3d;
+    --vr-muted: #556676;
+    --vr-surface: #ffffff;
+}
+
+.vr-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background: var(--vr-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.vr-header {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+.vr-tag {
+    color: #b73b4b;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.vr-title {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--vr-primary);
+}
+
+.vr-intro {
+    color: var(--vr-muted);
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.vr-overview-grid,
+.vr-feature-grid,
+.vr-tech-stack,
+.vr-challenges-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.vr-overview-grid,
+.vr-challenges-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.vr-card,
+.vr-tools-card {
+    background: var(--vr-surface);
+    border-radius: 24px;
+    padding: 1.9rem;
+    box-shadow: 0 18px 45px rgba(42, 60, 84, 0.08);
+}
+
+.vr-section-label {
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--vr-primary);
+    margin-bottom: 1rem;
+}
+
+.vr-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--vr-muted);
+    line-height: 1.8;
+}
+
+.vr-list li {
+    margin-bottom: 0.85rem;
+}
+
+.vr-feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vr-feature-grid article {
+    background: var(--vr-surface);
+    border-radius: 20px;
+    padding: 1.75rem;
+    box-shadow: 0 14px 30px rgba(42, 60, 84, 0.06);
+}
+
+.vr-feature-grid h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: var(--vr-primary);
+}
+
+.vr-tech-tools {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.vr-stack-card {
+    background: var(--vr-surface);
+    border-radius: 20px;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: 0 14px 30px rgba(42, 60, 84, 0.06);
+}
+
+.vr-stack-card span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    color: var(--vr-muted);
+    margin-bottom: 0.8rem;
+}
+
+.vr-stack-card p {
+    margin: 0;
+    font-weight: 700;
+    color: var(--vr-primary);
+}
+
+.vr-tools-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: var(--vr-primary);
+}
+
+.vr-tools-card ul {
+    padding-left: 1rem;
+}
+
+.vr-keywords {
+    display: grid;
+    gap: 1rem;
+}
+
+.vr-keyword-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+}
+
+.vr-keyword-list span {
+    background: var(--vr-surface);
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    color: var(--vr-primary);
+    font-size: 0.92rem;
+    box-shadow: 0 12px 25px rgba(42, 60, 84, 0.06);
+}
+
+@media (max-width: 1024px) {
+    .vr-overview-grid,
+    .vr-challenges-grid,
+    .vr-feature-grid,
+    .vr-tech-tools {
+        grid-template-columns: 1fr;
+    }
+
+    .vr-screenshot-carousel img {
+        max-width: 400px;
+    }
+
+    .vr-carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+.vr-screenshots {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.vr-screenshot-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.vr-screenshot-carousel img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 14px 30px rgba(42, 60, 84, 0.08);
+}
+
+.vr-carousel-btn {
+    background: var(--vr-surface);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--vr-primary);
+    box-shadow: 0 4px 12px rgba(42, 60, 84, 0.1);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vr-carousel-btn:hover {
+    background: var(--vr-primary);
+    color: white;
+}
+
+.vr-screenshot-counter {
+    text-align: center;
+    color: var(--vr-muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+    .vr-overview-grid,
+    .vr-challenges-grid,
+    .vr-feature-grid,
+    .vr-tech-tools,
+    .vr-screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .vr-page {
+        padding: 3rem 1.2rem;
+    }
+}
