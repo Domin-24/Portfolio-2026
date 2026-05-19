@@ -16,19 +16,31 @@
 }
 
 
-.bc-header { text-align: center; }
-.bc-tag {
-    color: var(--bc-primary);
-    letter-spacing: 0.3em;
-    font-weight: 600;
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+.bc-header {
+  text-align: center;
 }
+
+.bc-tag {
+  color: var(--bc-primary);
+  letter-spacing: 0.3em;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
 .bc-title {
-    font-size: 3.5rem;
-    letter-spacing: 0.1em;
-    color: var(--bc-text-dark);
-    font-weight: 800;
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  color: var(--bc-text-dark);
+  font-weight: 800;
+}
+
+.bc-intro {
+  font-size: 1rem;
+  color: var(--bc-text-gray);
+  max-width: 600px;
+  margin: 1rem auto 0;
+  line-height: 1.6;
 }
 
 
@@ -64,12 +76,40 @@
     gap: 3rem;
 }
 
+.bc-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.bc-card h3 {
+    color: var(--bc-text-dark);
+    margin-bottom: 1rem;
+}
+
+.bc-card p {
+    color: var(--bc-text-gray);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
 .bc-features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     border-left: 1px solid #eee;
     padding-left: 2rem;
+}
+
+.bc-features {
+    margin: 2rem 0;
+}
+
+.bc-features article h3 {
+    color: var(--bc-text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .bc-list {
@@ -123,6 +163,28 @@
     border-radius: 15px;
 }
 
+.bc-contributions {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.bc-challenges-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.bc-screenshot-counter,
+.diagram-counter {
+    text-align: center;
+    color: var(--bc-text-gray);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
 
 .bc-screenshots {
     display: grid;
@@ -245,7 +307,7 @@
 }
 
 @media (max-width: 900px) {
-  .bc-overview-grid, .bc-features-grid, .bc-tech-grid, .bc-stack-main {
+  .bc-overview-grid, .bc-features-grid, .bc-tech-grid, .bc-stack-main, .bc-challenges-grid {
     grid-template-columns: 1fr;
   }
 
