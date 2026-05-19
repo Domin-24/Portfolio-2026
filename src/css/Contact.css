@@ -28,6 +28,10 @@
   display: inline-block;
   margin-bottom: 20px;
   transition: 0.3s;
+  max-width: 100%;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .contact-email:hover {
@@ -81,4 +85,27 @@
 
 .social-links a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .contact-email,
+  .contact-phone {
+    font-size: 20px;
+  }
+
+  .contact-phone {
+    margin-bottom: 32px;
+  }
+
+  .social-links {
+    gap: 20px;
+  }
 }

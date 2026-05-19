@@ -13,11 +13,23 @@ import reviewImage from '../assets/images/BOOCCOMMU/review_page.png'
 import bookListImage from '../assets/images/BOOCCOMMU/รายการหนังสือ.png'
 import chatListImage from '../assets/images/BOOCCOMMU/แชทลิส.png'
 
+import { diagrams } from '../data/images/diagrams'
 
- import { diagrams } from '../data/images/diagrams' 
+const diagramLabels = [
+  'Add Book Workflow',
+  'Authentication System',
+  'Buy Book Workflow',
+  'Chat System Workflow',
+  'Payment Verification',
+  'Post System Workflow',
+  'Recommendation System',
+  'Review System Workflow',
+  'Sell Book Workflow'
+]
 
 function BookCommuPage() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentDiagramIndex, setCurrentDiagramIndex] = useState(0)
 
  
   const screenshots = [
@@ -38,6 +50,12 @@ function BookCommuPage() {
 
   const prevImage = () =>
     setCurrentIndex((prev) => (prev - 1 + screenshots.length) % screenshots.length)
+
+  const nextDiagram = () =>
+    setCurrentDiagramIndex((prev) => (prev + 1) % diagrams.length)
+
+  const prevDiagram = () =>
+    setCurrentDiagramIndex((prev) => (prev - 1 + diagrams.length) % diagrams.length)
 
   return (
     <main className="bookcommu-page">
@@ -72,13 +90,19 @@ function BookCommuPage() {
       {/* Diagram */}
       <section className="bc-diagram">
         <div className="bc-section-label">DIAGRAM</div>
-        <div className="bc-diagram-box">
-          <img
-            className="bc-diagram-image"
-            src={diagrams[currentIndex]}
-            alt="auth diagram"
-          />
+        <div className="bc-diagram-carousel">
+          <button onClick={prevDiagram}>&lt;</button>
+          <div className="bc-diagram-box">
+            <img
+              className="bc-diagram-image"
+              src={diagrams[currentDiagramIndex]}
+              alt={diagramLabels[currentDiagramIndex]}
+            />
+            <p className="diagram-label">{diagramLabels[currentDiagramIndex]}</p>
+          </div>
+          <button onClick={nextDiagram}>&gt;</button>
         </div>
+        <p className="diagram-counter">{currentDiagramIndex + 1} / {diagrams.length}</p>
       </section> 
     </main>
   )
